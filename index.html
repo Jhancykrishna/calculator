@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/script.js"></script>
+
+</head>
+
+<style>
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+
+
+    }
+
+    .display {
+        width: 205px;
+        height: 40px;
+        margin-left: 2px;
+        padding: 4;
+    }
+
+    }
+</style>
+
+
+
+<body>
+    <h3>calculator</h3>
+    <div class="main">
+
+
+        <input type="text" class="display" id="inpt">
+        <table>
+            <tr>
+                <td><input class="button" type="button" onclick='clearbox()'value="C"></td>
+                <td><input class="button" type="button" onclick='backspace()'value="<"></td>
+                <td><input class="button" type="button" onclick='displaybox("/")' value="/"></td>
+                <td><input class="button" type="button" onclick='displaybox("*")' value="x"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick='displaybox("7")' value="7"></td>
+                <td><input class="button" type="button" onclick='displaybox("8")' value="8"></td>
+                <td><input class="button" type="button" onclick='displaybox("9")' value="9"></td>
+                <td><input class="button" type="button" onclick='displaybox("-")' value="-"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick='displaybox("4")' value="4"></td>
+                <td><input class="button" type="button" onclick='displaybox("5")' value="5"></td>
+                <td><input class="button" type="button" onclick='displaybox("6")' value="6"></td>
+                <td><input class="button" type="button" onclick='displaybox("+")' value="+"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick='displaybox("1")' value="1"></td>
+                <td><input class="button" type="button" onclick='displaybox("2")' value="2"></td>
+                <td><input class="button" type="button" onclick='displaybox("3")' value="3"></td>
+                <td><input class="button" type="button" onclick='evaluateexp()' value="="></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

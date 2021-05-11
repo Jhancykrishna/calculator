@@ -1,0 +1,8 @@
+.calculator__dispaly{
+    background-color: black;
+}
+
+
+.calculator__keys { 
+    display: grid; 
+}
